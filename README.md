@@ -1,57 +1,58 @@
-# A template repo for IIASA Python projects
+# Documentation of the teaching learning material by the Energy, Climate, and Environment Program (ECE)
 
 Copyright (c) 2021 IIASA
 
-![License](https://img.shields.io/github/license/iiasa/python-stub)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![License](https://img.shields.io/github/license/iiasa/ece-teaching)
 
-## Overview
+This is a [Sphinx](http://sphinx-doc.org/) project for the documentation of the build of the teaching and learning website by the Energy, Climate, and Environment Program (ECE). The website can be found [here](https://teaching.ece.iiasa.ac.at/).
 
-Template repository for creating python packages and Sphinx-based documentation pages in line with the IIASA design guidelines
+## Scope & Aim
 
-## Configuration
+The scope and aim of the repository is to create a Sphinx documentation, which is the basis for the teaching and learning website. This repository should contain all docs, but not the data, of the teaching and learning material. 
 
-To start a new Python package from this repo, 
-click on the green **Use this template** button on top-right of this page.
-Detailed instructions to create a new repository from a template can be found
-[here](https://help.github.com/en/articles/creating-a-repository-from-a-template).
+## Instructions
 
-Then, make the following changes:
+### How to install dependencies and build locally
+1. Install dependencies and start Sphinx [sphinx_rtd_theme](https://sphinx-rtd-theme.readthedocs.io/)
 
-0. Change the text of the [LICENSE](LICENSE) file (optional).
-   Visit [choosealicense.com](https://choosealicense.com) to find out which license is
-   right for your project.
-0. Update the copyright (if other than IIASA) in this readme.
-0. Update the url in the license badge in this readme to point to your new repository.
-   This will automatically change the license badge (if you changed the license).
-0. Rename the folder `python_stub` to the intended package name.
-0. Update the package name, author info and url in `setup.cfg`.
-0. Update the package name, author info and copyright in `doc/source/conf.py`.
-0. Delete the configuration section from this readme and update the title and overview section.
+      `pip install -r requirements.txt`
+      
+      `$ sphinx-quickstart`
 
-Make sure to commit all changes to your new repository - then program away!
+2. Build from the command line. On Linux or macOS:
 
-## Recommendations
+    `make html`
 
-This package uses the [Black](https://black.readthedocs.io/) code style.
-A GitHub Action workflow is configured to check that your commits conform to the style.
+   On Windows:
 
-We recommend that you follow the [numpydoc](https://numpydoc.readthedocs.io)
-docstring formatting guide.
+    `.\make html`
+ 
+ 3. Open the rendered html page to see if everything fits:
+ 
+    `_build/html/index.html`
 
-Looking for more best-practice tools for scientific software development?
-Take a look at the [cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python) repository!
+### How to add new material
 
-## Installation
+To add new material, fork the repository and either update the existing ReST file `index.rst` or, if you want to build a subpage, implement your ReST file on the top level and link it within the `index.rst` file. 
 
-Install the package including the requirements for building the docs.
+Implementing a subpage is only recommended if your materials covers series of lectures, including video tutotrial(s) and multiple other files. 
 
-    pip install --editable .[doc]
+### How to write
 
-## Building the docs
+Use the following references for writing your ReST file:
 
-Run Sphinx to build the docs!
+- [Quick reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickref.html) reference from docutils.
+- [ReST cheat sheet](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html) by Thomas Cokelaer.
+- [Sphinx](http://www.sphinx-doc.org/) documentation, including reference on Sphinx-specific ReST syntax.
 
-    make --directory=doc html
+As the scope of the repository states - please do not store your data in the repository itself. Good places to upload files such as videos or presentation slides might be http://pure.iiasa.ac.at/id/eprint/17286/ or https://data.ene.iiasa.ac.at/. Then simply link to the folder within your ReST file. 
 
-The rendered html pages will be located in `doc/build/html/index.html`.
+E.g. linking a video:
+
+```
+.. raw:: html
+
+	<video width="640" height="360" controls preload="none" controlsList="nodownload">
+		<source src="Your file path"type="video/mp4">
+ ```
+
