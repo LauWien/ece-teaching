@@ -35,7 +35,7 @@ The scope and aim of the repository is to create a Sphinx documentation, which i
 
 To add new material, fork the repository and either update the existing ReST file `index.rst` or, if you want to build a subpage, implement your ReST file on the top level and link it within the `index.rst` file. 
 
-Implementing a subpage is only recommended if your materials covers series of lectures, including video tutotrial(s) and multiple other files. 
+Implementing a subpage is only recommended if your materials covers series of lectures, including video tutorial(s) and multiple other files. 
 
 ### How to write
 
