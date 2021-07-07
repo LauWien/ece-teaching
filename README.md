@@ -1,4 +1,4 @@
-# Documentation of the teaching learning material by the Energy, Climate, and Environment Program (ECE)
+# Overview of the teaching & learning material by the ECE program
 
 Copyright (c) 2021 IIASA
 
@@ -53,6 +53,5 @@ E.g. linking a video:
 .. raw:: html
 
 	<video width="640" height="360" controls preload="none" controlsList="nodownload">
-		<source src="Your file path"type="video/mp4">
+		<source src="Your file path" type="video/mp4">
  ```
-
