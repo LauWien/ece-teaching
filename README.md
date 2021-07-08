@@ -15,7 +15,7 @@ This repository contains pages with relevant information about teaching events,
 including links to relevant websites and the teaching material (e.g., pdf, pptx, 
 recorded videos). Any such material should not be committed to this repository, 
 but be stored in an appropriate location such as the IIASA publication 
-[repository](pure.iiasa.ac.at) or a folder on ldom002.
+repository (pure.iiasa.ac.at) or a folder on ldom002.
 
 The material comprises workshops organized by ECE, university courses taught
 by ECE staff, tutorials, etc.
@@ -74,7 +74,7 @@ by Thomas Cokelaer.
 Sphinx-specific ReST syntax.
 
 See the following example on how to link e.g. your video from the IIASA
-publication [repository](pure.iiasa.ac.at) or a folder on ldom002.
+publication repository (pure.iiasa.ac.at) or a folder on ldom002.
 
 ```
 .. raw:: html
