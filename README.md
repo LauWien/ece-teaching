@@ -26,12 +26,9 @@ by ECE staff, tutorials, etc.
 ## Instructions
 
 ### How to install dependencies and build locally
-1. Install dependencies and start 
-[Sphinx](https://www.sphinx-doc.org/en/master/usage/quickstart.html)
+1. Install dependencies:
 
       `pip install -r requirements.txt`
-      
-      `$ sphinx-quickstart`
 
 2. Build from the command line. On Linux or macOS:
 
