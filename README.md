@@ -1,10 +1,12 @@
 # Overview of the teaching & learning material by the ECE program
 
-Copyright (c) 2021 IIASA; ![License](https://img.shields.io/github/license/iiasa/ece-teaching)
+![License](https://img.shields.io/github/license/iiasa/ece-teaching)
 
-This is a [Sphinx](http://sphinx-doc.org/) project for the documentation of the 
-build of the teaching and learning website by the Energy, Climate, and 
-Environment Program (ECE). The website can be found [here](https://teaching.ece.iiasa.ac.at/).
+Copyright (c) 2021 IIASA; published under the [MIT License](LICENSE)
+
+This is a [Sphinx](http://sphinx-doc.org/) project for the documentation of the
+teaching and learning activities by the Energy, Climate, and Environment Program (ECE).
+The website can be found [here](https://teaching.ece.iiasa.ac.at/).
 
 The MIT license applies only to this site and not to the teaching and learning
 content.
@@ -15,7 +17,8 @@ This repository contains pages with relevant information about teaching events,
 including links to relevant websites and the teaching material (e.g., pdf, pptx, 
 recorded videos). Any such material should not be committed to this repository, 
 but be stored in an appropriate location such as the IIASA publication 
-repository (pure.iiasa.ac.at) or a folder on ldom002.
+repository (pure.iiasa.ac.at) or a personal folder,
+e.g., https://data.ece.iiasa.ac.at/<user>
 
 The material comprises workshops organized by ECE, university courses taught
 by ECE staff, tutorials, etc.
